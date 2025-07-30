@@ -1,11 +1,12 @@
-const express = require('express');
+// app.js
+const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello from Node.js on EKS!');
+app.get("/", (req, res) => {
+  res.send("ci/cd v3 버전!!");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`서버가 포트 ${port}에서 실행 중입니다`);
 });
